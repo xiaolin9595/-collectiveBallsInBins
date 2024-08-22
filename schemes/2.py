@@ -82,9 +82,9 @@ def makeRow(name, scheme, tex):
         row = [name, comsize, encodingsize, commpqsize, (reception, encodinglength), samples, commsize]
     return row
 
-#####################################################################
+####################################################################
 opts = [opt for opt in sys.argv[1:] if opt.startswith("-")]
-args = [arg for arg in sys.argv[1:] if not opt.startswith("-")]
+args = [arg for arg in sys.argv[1:] if not arg.startswith("-")]
 if len(args) == 0:
     print("Missing Argument: Datasize in Megabytes.")
     print("Hint: To print the table in LaTeX code, add the option -l.")
